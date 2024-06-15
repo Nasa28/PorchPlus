@@ -9,6 +9,7 @@ This backend system manages gym memberships with various billing structures and 
 - **TypeORM** for object-relational mapping.
 - **@nestjs/schedule** for cron job implementation.
 - **@nestjs-modules/mailer** for sending emails.
+- **Docker** and **Docker Compose** for containerization and deployment.
 
 ## Data Model
 - **Membership**: Stores personal information and membership details.
@@ -35,14 +36,21 @@ This backend system manages gym memberships with various billing structures and 
 4. Run the application: `npm run start`
 5. The cron job will run daily to send reminder emails.
 
+## How to Run Using Docker Compose
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Run `docker-compose up -d` to build and start the Docker containers.
+4. Access the application at `http://localhost:3000/`
+5. The cron job will run inside the Docker container to send reminder emails.
+
 ## Data Loading from CSV Files
 To load data into the system from CSV files:
 1. Place the CSV files in the root directory of the project.
-2. Make a GET request to `http://localhost:3000/` after starting the application (`npm run start`).
+2. Make a GET request to `http://localhost:3000/` after starting the application (`npm run start` or Docker container).
 3. The data from CSV files will be processed and inserted into the database.
 
 ## Testing
-- Includes unit tests to ensure functionality.
+- To be completed.
 
 ## Conclusion
 This system effectively manages gym memberships and sends timely reminders for upcoming payments, ensuring a smooth experience for members.
