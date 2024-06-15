@@ -11,8 +11,7 @@ This backend system manages gym memberships with various billing structures and 
 - **@nestjs-modules/mailer** for sending emails.
 
 ## Data Model
-- **Member**: Stores personal information and membership details.
-- **Membership**: Stores information about the type of membership and billing.
+- **Membership**: Stores personal information and membership details.
 - **AddOnService**: Stores optional add-on services.
 - **Invoice**: Stores invoice details for members.
 
@@ -39,7 +38,7 @@ This backend system manages gym memberships with various billing structures and 
 ## Data Loading from CSV Files
 To load data into the system from CSV files:
 1. Place the CSV files in the root directory of the project.
-2. Make a GET request to `http://localhost:3000/data-load` after starting the application (`npm run start`).
+2. Make a GET request to `http://localhost:3000/` after starting the application (`npm run start`).
 3. The data from CSV files will be processed and inserted into the database.
 
 ## Testing
