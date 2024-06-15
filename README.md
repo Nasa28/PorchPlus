@@ -36,6 +36,7 @@ This backend system manages gym memberships with various billing structures and 
 4. Run the application: `npm run start`
 5. The cron job will run daily to send reminder emails.
 
+
 ## How to Run Using Docker Compose
 1. Clone the repository.
 2. Navigate to the project directory.
